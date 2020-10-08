@@ -1,5 +1,5 @@
 # Foursquare-Venues
-FourSquare Api written in Kotlin - MVVM Architecture# FoursquareVenues
+FourSquare Api written in Kotlin - MVVM Architecture
 
 Project wrote in Kotlin - MVVM Architecture
 Used Foursquare apis and venue explorer and details
