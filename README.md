@@ -2,9 +2,9 @@
 FourSquare Api written in Kotlin - MVVM Architecture
 
 Project wrote in Kotlin - MVVM Architecture
-Used Foursquare apis and venue explorer and details
+Used Foursquare apis for venue explorer and details
 
-Used Dagger for dependency injection and Coroutines(Java) 
+Used Dagger for dependency injection and Coroutines
 for multi threading process.
 
 Used Architectural component such Live Data , View Model.
