@@ -1,0 +1,10 @@
+<resources>
+    <!--<string name="app_name">Assignment</string>-->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="location_settings_inadequate">Location settings are inadequate, and cannot be fixed here. Fix in Settings.</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>
+    <string name="gps_text">You have to enable GPS to use this app.</string>
+    <string name="settings">Settings</string>
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <com.google.android.material.appbar.MaterialToolbar
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"
+        android:background="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_back_button"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="@dimen/DP16"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/venueImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_placeholder"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/DP16"
+            app:layout_constraintTop_toBottomOf="@+id/venueImage"
+            app:layout_constraintGuide_percent="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:padding="@dimen/DP16"
+            android:id="@+id/titleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Title :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/SP16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/venueImage" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:padding="@dimen/DP16"
+            android:id="@+id/titleValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/SP16"
+            app:layout_constraintStart_toEndOf="@+id/guideLine"
+            app:layout_constraintTop_toBottomOf="@+id/venueImage" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:padding="@dimen/DP16"
+            android:id="@+id/descriptionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/SP16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:padding="@dimen/DP16"
+            android:id="@+id/descriptionValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/SP16"
+            app:layout_constraintStart_toEndOf="@+id/guideLine"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:padding="@dimen/DP16"
+            android:id="@+id/contactInfoText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Contact Info :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/SP16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/contactInfoValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/DP16"
+            android:textColor="@color/black"
+            android:textSize="@dimen/SP16"
+            app:layout_constraintStart_toEndOf="@+id/guideLine"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:padding="@dimen/DP16"
+            android:id="@+id/addressText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/SP16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contactInfoText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:padding="@dimen/DP16"
+            android:id="@+id/addressValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/SP16"
+            app:layout_constraintStart_toEndOf="@+id/guideLine"
+            app:layout_constraintTop_toBottomOf="@+id/contactInfoText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:padding="@dimen/DP16"
+            android:id="@+id/ratingText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rating :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/SP16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:padding="@dimen/DP16"
+            android:id="@+id/ratingValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/SP16"
+            app:layout_constraintStart_toEndOf="@+id/guideLine"
+            app:layout_constraintTop_toBottomOf="@+id/addressText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
